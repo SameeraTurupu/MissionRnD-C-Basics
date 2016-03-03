@@ -28,21 +28,22 @@ int main(){
 	
 	//Test Count file
 	
-	int countTemp = count(5, 20);
+	int countTemp = count(12, 55);
 	printf("%d\n", countTemp);
 
 
 	//Test Swap
 	int a = 5, b = 7;
 	swap(&a, &b);
-	printf("%d %d\n", a, b);
+	printf("swapped numbers are %d %d\n", a, b);
 
 	//Is Older 
-	char date1[20] = "29-02-2004";
-	char date2[20] = "29-02-2000";
+	
+	char date1[20] = "15-01-2000";
+	char date2[20] = "15-07-2000";
 	int check=isOlder(date1, date2);
 	if (check == 0){
-		printf("Both are of same age \n");
+		printf("%d Both are of same age \n", check);
 	}
 	else{
 		printf("%d person is Older \n", check);
